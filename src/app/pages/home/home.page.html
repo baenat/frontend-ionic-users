@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bienvenido</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()"> Salir </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding ion-content-center">
+  <div id="container">
+    <h1>Bienvenido a mi aplicación!</h1>
+    <ion-button fill="outline" (click)="goToUsersPage()">Ir a la página de usuarios</ion-button>
+  </div>
+</ion-content>

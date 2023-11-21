@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="text" [(ngModel)]="email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Repeat Password</ion-label>
+        <ion-input type="password" [(ngModel)]="repeatPassword" required></ion-input>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-button type="submit" (click)="register()" expand="block">Register</ion-button>
+
+    <ion-card-content>
+      ¿Estás empezando? <a [routerLink]="['/login']">Iniciar sesion</a>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
